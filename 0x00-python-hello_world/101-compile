@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# Get the Python file name from the environment variable
+py_file=$PYFILE
+
+# Generate the output file name by appending 'c' to the Python file name
+output_file="${py_file}c"
+
+# Compile the Python script
+python -m py_compile "$py_file"
+
+# Rename the compiled file to the output file name
+mv "__pycache__/${py_file}.*.pyc" "$output_file"
+
+# Cleanup the '__pycache__' directory
+rm -r "__pycache__"
+
