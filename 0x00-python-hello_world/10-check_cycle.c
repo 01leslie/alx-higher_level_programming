@@ -1,5 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include "lists.h"
 
 /**
 * check cycle - uses the "Floyd's cycle-finding algorythm to detect a cycle in the linked list. 

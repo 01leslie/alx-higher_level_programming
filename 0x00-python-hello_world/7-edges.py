@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 word = "Hello"
 
 word_first_3 = word[:3]
